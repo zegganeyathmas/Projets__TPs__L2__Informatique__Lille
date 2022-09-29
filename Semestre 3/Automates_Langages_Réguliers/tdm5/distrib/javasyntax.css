@@ -1,0 +1,26 @@
+pre.javasource {
+    background-color : #222;
+    color : white;
+}
+pre.javasource .int{
+    color : yellow;
+}
+pre.javasource .float {
+    color : orange;
+}
+pre.javasource .string {
+    color : lightgreen;
+}
+pre.javasource .ident {
+    color : lightblue;
+}
+pre.javasource .reserved {
+    color : white;
+    font-weight : bold;
+}
+pre.javasource .comment {
+    color : grey;
+}
+pre.javasource .assign{
+    color : violet;
+}

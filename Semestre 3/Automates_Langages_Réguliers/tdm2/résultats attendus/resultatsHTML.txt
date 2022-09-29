@@ -1,0 +1,6 @@
+** Q1 - refEntite
+20
+** Q2 - valeurs d'attribut
+66
+** Q3 - balises ouvrantes
+108

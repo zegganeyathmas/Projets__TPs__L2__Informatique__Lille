@@ -1,0 +1,24 @@
+** Q1 - contenant la sous-chaîne «nez»
+8
+** Q2 - contenant 3 points successifs
+10
+** Q3 - contenant 3 voyelles non accentuées successives
+12
+** Q4 - commençant par un A
+8
+** Q5 - se terminant par un ?
+4
+** Q6 - contenant un l non suivi d'un e 
+28
+** Q7 - contenant exactement 2 occurrences de "
+5
+** Q8 - contenant le mot usuel «nez»
+6
+** Q9 - contenant un mot usuel se terminant par 3 voyelles non accentuées successives
+4
+** Q10 - contenant un mot usuel composé de 7 lettres alphabétiques exactement
+22
+** Q11 - contenant un mot usuel composé de 9 à 12 lettres alphabétiques
+17
+** Q12 - contenant un mot usuel commençant par l ou L et se terminant par e
+15

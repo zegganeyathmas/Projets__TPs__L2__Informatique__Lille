@@ -1,0 +1,5 @@
+
+"\<([[:alpha:]]|:|_)([[:alpha:]]|:|_|[[:digit:]]|\.|-)*"
+&$nomXML
+\"$nomXML\"
+<[[:alpha:]]+[\s]([[:alpha:]]*=\"[[:alpha]]*\"[\s])*>

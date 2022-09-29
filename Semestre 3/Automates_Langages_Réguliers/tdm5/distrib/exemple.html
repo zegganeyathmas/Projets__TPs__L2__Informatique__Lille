@@ -1,0 +1,64 @@
+
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <title>Programme Java</title>
+    <link rel="stylesheet" href="javasyntax.css" />
+ </head>
+ <body>
+  <pre class="javasource">
+<span class="comment">/** This class represents a stock characterized by its quantity
+ */</span>
+<span class="reserved">public</span> <span class="reserved">class</span> <span class="ident">Stock</span> {
+ 
+    <span class="reserved">private</span> <span class="reserved">int</span> <span class="ident">quantity</span>;
+
+    <span class="comment">/** creates a  stock with initial quantity = 0
+     */</span>
+    <span class="reserved">public</span> <span class="ident">Stock</span>() {
+	<span class="reserved">this</span>.<span class="ident">quantity</span> <span class="assign">=</span> <span class="int">0</span>;
+    }
+    <span class="comment">/** creates a  stock with given initial quantity
+     * @param initialQty the initial quantity for this stock
+     */</span>
+    <span class="reserved">public</span> <span class="ident">Stock</span>(<span class="reserved">int</span> <span class="ident">initialQty</span>) {
+	<span class="reserved">this</span>.<span class="ident">quantity</span> <span class="assign">=</span> <span class="ident">initialQty</span>;
+    }
+
+    <span class="comment">/** gives the quantity of this stock
+     * @return the quantity of this stock
+     */</span>
+    <span class="reserved">public</span> <span class="reserved">int</span> <span class="ident">getQuantity</span>() {
+	<span class="reserved">return</span> <span class="reserved">this</span>.<span class="ident">quantity</span>;
+    }
+
+    <span class="comment">/** removes elements from this stock. As much required elements as possible are removed from stock.
+     *  Quantity never becomes negative.
+     * 
+     * @param removedQty the quantity of elements to be removed from this stock
+     * @return the quantity that has been effectiveely removed from this stock
+     */</span>
+    <span class="reserved">public</span> <span class="reserved">int</span> <span class="ident">remove</span>(<span class="reserved">int</span> <span class="ident">removedQty</span>) {
+        <span class="reserved">if</span> (<span class="ident">removedQty</span> <span class="op">></span> <span class="reserved">this</span>.<span class="ident">quantity</span>) {
+            <span class="ident">removedQty</span> <span class="assign">=</span> <span class="reserved">this</span>.<span class="ident">quantity</span> ;
+        }
+        <span class="reserved">this</span>.<span class="ident">quantity</span> <span class="assign">=</span> <span class="reserved">this</span>.<span class="ident">quantity</span> <span class="op">-</span> <span class="ident">removedQty</span> ;
+        <span class="reserved">return</span> <span class="ident">removedQty</span> ;        
+    }
+
+    <span class="comment">/** adds some quantity to this stock
+     * @param qty the added quantity
+     */</span>
+    <span class="reserved">public</span> <span class="reserved">void</span> <span class="ident">add</span>(<span class="reserved">int</span> <span class="ident">qty</span>) {
+	<span class="reserved">this</span>.<span class="ident">quantity</span> <span class="assign">=</span> <span class="reserved">this</span>.<span class="ident">quantity</span> <span class="op">+</span> <span class="ident">qty</span>;
+    }
+    
+    
+    <span class="reserved">public</span> <span class="ident">String</span> <span class="ident">toString</span>() {
+	<span class="reserved">return</span> <span class="string">"the quantity for this stock is "</span><span class="op">+</span><span class="reserved">this</span>.<span class="ident">quantity</span>;
+    }
+}
+</pre>
+
+ </body>
+</html>
